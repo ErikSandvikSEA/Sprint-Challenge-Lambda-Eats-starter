@@ -7,5 +7,10 @@ describe('Order Form', () => {
           cy.get(`[data-cyName='cyName']`)
                .type('name here')
                .should(`have.value`, 'name here')
+
+
+          cy.get(`input[name='pepperoni']`)
+               .check()
+               .should(`have.checked`)
      })
 })
