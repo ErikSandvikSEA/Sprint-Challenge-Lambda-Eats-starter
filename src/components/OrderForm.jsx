@@ -7,7 +7,9 @@ const OrderForm = (props) => {
           values,
           onInputChange,
           onCheckboxChange,
-          errors
+          errors,
+          disabled,
+          onSubmit
      } = props
      return (
           <div>
@@ -84,6 +86,9 @@ const OrderForm = (props) => {
                               type='text'
                          />
                     </label>
+                    <button 
+        onClick={onSubmit} 
+        disabled={disabled}>Submit Order</button>
                </form>
           </div>
      )
