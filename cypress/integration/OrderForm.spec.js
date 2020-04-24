@@ -12,5 +12,12 @@ describe('Order Form', () => {
           cy.get(`input[name='pepperoni']`)
                .check()
                .should(`have.checked`)
+
+          cy.get(`select[name='size']`)
+               .select('small')
+               .should(`have.value`, 'small')
+
+          cy.contains(`Submit Order`)
+               .click()     
      })
 })
