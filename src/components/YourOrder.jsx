@@ -4,7 +4,7 @@ import { useParams, useHistory, useRouteMatch, Route, Link } from 'react-router-
 
 const YourOrder = () => {
      return (
-          <div>Your Order</div>
+          <div>Your Order Has Been Placed</div>
      )
      }
 

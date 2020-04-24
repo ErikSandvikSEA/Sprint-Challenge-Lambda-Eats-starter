@@ -37,6 +37,7 @@ const OrderForm = (props) => {
 
                     <label>Enter Name:&nbsp;
                     <input
+                              data-cyName ='cyName'
                               value={values.name}
                               onChange={onInputChange}
                               name='name'

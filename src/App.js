@@ -75,7 +75,7 @@ const App = () => {
         .filter(topping => formValues.toppings[topping] === true),
       specialInstructions: formValues.specialInstructions
     }
-
+    
     postOrder(newOrder)
     setFormValues(initialFormValues)
   }
